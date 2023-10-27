@@ -1,0 +1,33 @@
+Burbuja
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a[5];
+    int b;
+    int i;
+    int j;
+    
+    for(i = 0; i <=4; i++){
+        cout<<"Digite un valor: ";
+        cin>>a[i];
+    }
+    
+    for(i = 0; i <= 4; i++){
+        for(j = 0; j <= 4; j++){
+            if(a[i] < a[j]){
+                b = a[i];
+                a[i] = a[j];
+                a[j] = b;
+            }      
+        }
+    }
+    
+    for(i = 0; i < 5; i++){
+        cout<<a[i]<<" ";
+    }
+    return 0;
+}
