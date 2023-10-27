@@ -65,3 +65,31 @@ int main()
 	
     return 0;
 }
+
+
+MATRICES
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a[3][3];
+    int i;
+    int j;
+    i = 0, j = 0;
+    
+    for(i = 0; i < 3; i++){
+        for(j = 0; j < 3; j++){
+            cout<<"Digite un valor: ";
+            cin>>a[i][j];
+        }
+    }
+    
+    for(i = 0; i < 3; i++){
+        for(j = 0; j < 3; j++)
+            cout<<a[i][j];
+            cout<<endl;
+    }
+}
